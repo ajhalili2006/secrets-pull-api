@@ -2,6 +2,26 @@
   "name": "secrets-pull-api",
   "version": "0.1.0",
   "scripts": {
-    "start": "exit 1"
+    "start": "echo todo",
+    "commit": "yarn commit:dco",
+    "commit:dco": "cz --signoff"
+  },
+  "workspaces": [
+    "server/api",
+    "server/discord",
+    "server/telegram-bot"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "commitizen": "^4.2.4",
+    "commitlint": "^12.1.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "prettier": "^2.3.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
