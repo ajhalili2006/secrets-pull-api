@@ -1,0 +1,7 @@
+{
+  "name": "secrets-pull-api",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "exit 1"
+  }
+}
