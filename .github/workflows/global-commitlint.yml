@@ -16,5 +16,7 @@ jobs:
       # Run the commitlint action, considering its own dependencies and yours as well 🚀
       # `github.workspace` is the path to your repository.
       - uses: wagoid/commitlint-github-action@v4
+        with:
+          configFile: ${{ github.workspace }}/commitlint.config.js
         env:
           NODE_PATH: ${{ github.workspace }}/node_modules
