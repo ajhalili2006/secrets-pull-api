@@ -1,0 +1,19 @@
+{
+  "name": "@secrets-pull-api/api-server",
+  "description": "The core API for Secrets Pull API.",
+  "version": "0.1.0",
+  "dependencies": {
+    "fastify": "^3.19.1"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^16.3.3",
+    "ts-node-dev": "^1.1.8",
+    "tsc-alias": "^1.3.7",
+    "tsconfig-paths": "^3.10.1",
+    "typescript": "^4.3.5"
+  }
+}
