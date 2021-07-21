@@ -3,11 +3,20 @@
   "description": "The core API for Secrets Pull API.",
   "version": "0.1.0",
   "dependencies": {
-    "fastify": "^3.19.1"
+    "chalk": "^4.1.1",
+    "dotenv": "^10.0.0",
+    "fastify": "^3.19.1",
+    "fastify-sensible": "^3.1.1",
+    "inquirer": "^8.1.2"
   },
   "scripts": {
-    "start": "node server.js",
-    "build": "tsc"
+    "start": "yarn api:start",
+    "build": "tsc",
+    "dev": "yarn api:dev",
+    "api:setup": "node ./scripts/setup-dev-environment.js",
+    "api:start": "yarn api:start-prod",
+    "api:start-prod": "yarn build && node dist/index.js",
+    "api:dev": "ts-node-dev --respawn -r tsconfig-paths/register src/index.ts"
   },
   "devDependencies": {
     "@types/node": "^16.3.3",

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "start": "yarn api:start",
+    "dev": "yarn api:dev",
     "commit": "yarn commit:dco",
     "commit:dco": "cz --signoff"
   },
